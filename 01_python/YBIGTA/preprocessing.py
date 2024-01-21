@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import re
 from typing import List
 
@@ -20,7 +14,6 @@ class Preprocessor:
         return text
 
 if __name__ == "__main__":
-    # 바꿀 corpus 내용
     corpus = ["Ybigta studies big data.", "I study data science."]
     
     preprocessor = Preprocessor()
