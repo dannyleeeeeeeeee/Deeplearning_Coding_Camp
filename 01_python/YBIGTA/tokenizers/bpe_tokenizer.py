@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import re
 from typing import Optional, Union, List
 
@@ -45,4 +39,3 @@ if __name__ == "__main__":
     tokenizer.train(n_iter=1000)
     result = tokenizer.tokenize("Test tokenization.")
     print(result)
-
