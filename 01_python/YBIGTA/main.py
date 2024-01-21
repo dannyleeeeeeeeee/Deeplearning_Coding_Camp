@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import argparse
 from YBIGTA.tokenizers import BPETokenizer, WordTokenizer
 from YBIGTA.preprocessing import Preprocessor
@@ -14,8 +8,7 @@ def main():
     parser.add_argument("--n_corpus", type=int, default=30000, help="Size of the corpus")
     parser.add_argument("--n_iter", type=int, default=10000, help="Number of iterations for training")
     args = parser.parse_args()
-
-    # 바꿀 corpus 내용
+    
     corpus = ["Ybigta studies big data.", "I study data science."]
 
     preprocessor = Preprocessor()
