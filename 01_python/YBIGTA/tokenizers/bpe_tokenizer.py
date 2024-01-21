@@ -33,9 +33,9 @@ class BPETokenizer:
         text = text.lower()
         text = re.sub(r"[^a-zA-Z0-9\s]", "", text)
         return text
-
 if __name__ == "__main__":
-    tokenizer = BPETokenizer(["This is a sample sentence.", "Another example sentence."])
+    new_corpus = ["New sample text.", "Another example text."]
+    tokenizer = BPETokenizer(new_corpus)
     tokenizer.train(n_iter=800)
     result = tokenizer.tokenize("Test tokenization.")
     print(result)
