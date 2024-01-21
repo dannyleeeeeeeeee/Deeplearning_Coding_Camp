@@ -36,6 +36,6 @@ class BPETokenizer:
 
 if __name__ == "__main__":
     tokenizer = BPETokenizer(["This is a sample sentence.", "Another example sentence."])
-    tokenizer.train(n_iter=1000)
+    tokenizer.train(n_iter=800)
     result = tokenizer.tokenize("Test tokenization.")
     print(result)
